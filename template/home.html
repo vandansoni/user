@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Home</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js'></script>
+</head>
+
+<body>
+    <center>
+        <div>
+            
+                <div class="panel panel-success">
+                        {% csrf_token %}
+                    <div class="panel-heading">
+                        <h1>Home Page</h1>
+                    </div>
+                    <a href="/account/logout/" value="Logout" style="float:right"><p class="text-success">Log out</p></a><br>
+                    <div class="panel-body">
+                            
+                        <div class="panel panel-success">
+                        <h4 class="text-success">Wel-come <mark class="bg-success">{{name}}</mark> in home page</h4>
+                        
+                    <br>
+                        
+                        
+                        
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Log in</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js'></script>
+    </head>
+
+    <body>
+        <center>
+            <div>
+            <table class="table table-hover"  >
+                <form action="" method="POST" >
+                        {% csrf_token %}
+
+                <tr>
+                        <th>
+                            Login
+                            <a href="/account/register/" value="Register" style="float:right">Register here</a>
+                        </th>
+                </tr>        
+                <tr>
+                        <td>
+                            <p class=text-primary>User Name</p>
+                            <input type="text" name="username" placeholder="Emter your user name" class="form-control" >
+                        </td>
+                </tr>
+
+                <tr> 
+                        <td>
+                            <p class=text-primary>Password</p>
+                            <input type="password" name="password" placeholder="Emter your password" class="form-control" >
+                        </td>
+                </tr>
+                <tr>
+                        <td colspan="2" >
+                            
+                            <input type="submit" onclick="logIn" style="float:right" value="logIn" class="btn btn-success btn-block"/>
+                        </td>
+                </tr>
+             </form>
+            </table>
+            </div>
+        </center>
+    </body>
+</html>
